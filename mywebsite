@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" >
+    <link rel="stylesheet" href="style.css">
+    <title>MyWebSite</title>
+    <link rel="icon" href="download.jpg">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(116, 206, 241),rgb(96, 128, 168));
+}
+header a{
+    color: black;
+}
+#logobox{
+    width: 30%;
+    height: 100%;
+    float: right;
+}
+#h1header{
+    float: left;
+    line-height: 100px;  
+    padding: 0 18px;
+}
+#imglogo{
+    height: 100%;
+    border-radius: 50%;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+}
+nav{
+    width: 70%;
+    text-align: center;
+}
+nav a:hover{
+    background-color: cadetblue;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 450px;
+    background-color: rgb(16, 89, 122);
+    border-top: 3px solid white;
+    animation-name: changebackground;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+aside{
+    font-weight: bold;
+
+    width: 30%;
+    height: 100%;
+    background-color: teal;
+    text-align: center;
+    float: left;
+    
+}
+aside img{
+    width: 100%;
+    
+}
+#h1aside{
+    border-bottom: 2px solid black;
+
+}
+#article{
+    width: 70%;
+    height: 450px;
+    float: right;
+    position: relative;
+}
+#boxx{
+    text-align: center;
+    position: absolute;
+    width: 500px;
+    height: 180px;
+    background-color: teal;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#boxx h1{
+    border-bottom: 3px solid ;
+}
+#contact-box{
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+    margin-top: 15px;
+}
+#contact-box img{
+    width: 50px;
+    border-bottom: 2px double darkblue;
+    padding-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px ;
+
+}
+#contact-box img:hover{
+    width: 60px;
+    border-bottom: 2px solid rgb(122, 2, 2);
+}
+@keyframes changebackground{
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: teal;
+    }
+    100%{
+        background-color: rgb(32, 111, 131);
+    }
+   
+}
+@media only screen and(min-width:1000px){
+    #logobox {
+        width: 35%;
+    }
+    #article{
+        width: 65%;
+    }
+    aside{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:940px) {
+    #logobox {
+        width: 30%;
+    }
+}
+@media only screen and (max-width:799px)
+{
+    header,main{
+        height: auto;
+    }
+    #logobox{
+        width: 100%;
+    }
+    #h1headre{
+        float: none;
+
+    }
+
+    #imglogo{
+        float: none;
+
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    #article{
+        height: 250px;
+        width: 100%;
+
+    }
+}
+@media only screen and (max-width:500px){
+    nav li{
+        display: block;
+        width: 100%;
+    }
+}
+@media only screen and (orientation :landscape) and (max-width : 400px){
+    #logobox{
+        background-color: aqua;
+    }
+}
+@media print{
+    main{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <span id="logobox">
+            <a href="https://www.google.com/" target="_blank"><h1 id="h1header">TAHAT</h1></a>
+            <a href="https://www.youtube.com/" target="_blank"><img id="imglogo" src="MTlogo.jpg" alt=""></a>
+
+            
+        </span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/js/default.asp" target="_blank">JS</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/php/default.asp" target="_blank">PHP</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+            <aside>
+                <a href="https://web.facebook.com/" target="_blank" ><img src="download (1).jpg" alt=""></a>
+                <h1 id="h1aside">My WebSite</h1>
+                <div id="contact-box">
+                    <a href="https://web.facebook.com/"><img src="facebook.png" alt=""></a>
+                    <a href="https://www.whatsapp.com/?lang=en"><img src="whatsapp.png" alt=""></a>
+                    <a href="https://twitter.com/?lang=en"><img src="twitter.png" alt=""></a>
+                    <a href="https://www.instagram.com/?hl=en"><img src="insta.png" alt=""></a>
+                </div>
+            </aside>
+            <article id="article">
+                <div id="boxx">
+                    <h1>MOHAMAD TAHAT</h1>
+                    <p>3 years' experience in Sales sector, positive constructive attitude in the
+                        field of programing languages, certified in HTML5 and CSS3 participate in
+                        many projects with android system and MVC.</p>
+                </div>
+
+            </article>
+    </main>
+</body>
+</html>
